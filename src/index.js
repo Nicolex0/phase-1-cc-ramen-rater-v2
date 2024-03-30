@@ -32,7 +32,7 @@ const addSubmitListener = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:3000/ramens', {
+      const response = await fetch('http://localhost:3000/ramen', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -58,7 +58,7 @@ const addSubmitListener = () => {
     };
 
     try {
-      const response = await fetch(`http://localhost:3000/ramens/${ramenId}`, {
+      const response = await fetch(`http://localhost:3000/ramen/${ramenId}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'

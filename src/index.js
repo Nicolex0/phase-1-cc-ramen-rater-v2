@@ -32,7 +32,7 @@ const addSubmitListener = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:3000/ramen', {
+      const response = await fetch('http://localhost:3000/ramens', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -58,7 +58,7 @@ const addSubmitListener = () => {
     };
 
     try {
-      const response = await fetch(`http://localhost:3000/ramen/${ramenId}`, {
+      const response = await fetch(`http://localhost:3000/ramens/${ramenId}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
@@ -110,10 +110,3 @@ const main = () => {
 // Invoke main after DOM has fully loaded
 document.addEventListener('DOMContentLoaded', main);
 
-// Export functions for testing
-export {
-  displayRamens,
-  addSubmitListener,
-  handleClick,
-  main,
-};
